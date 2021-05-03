@@ -1,11 +1,12 @@
 #include<stdio.h>
 #include<stdlib.h>
 //def struct with moths, contribution and rate of return
-typedef struct _retire_info{
+struct _retire_info{
   int months;
   double contribution;
   double rate_of_return;
-} retire_info;
+};
+typedef struct _retire_info retire_info;
 //Function printf
 void print_monthly_info(int months, double balance){
   printf("Age %3d month %2d you have $%.2lf\n", months/12, months%12,balance);
